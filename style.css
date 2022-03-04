@@ -1,0 +1,80 @@
+:root{
+    --primary: rgb(27, 33, 90); 
+    --secondary: rgb(241, 241, 239);
+    --tertiary: rgb(8, 106, 109);
+
+}
+
+*{
+
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--primary);
+}
+
+header{
+    background-image: url(./images/hero.jpg);
+    height: 400px;
+    width: auto;
+    background-size: cover;
+    position: relative;
+    margin: 0;
+}
+
+header a{
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+header h1{
+    background-color: var(--tertiary); width: 600px; height: 100px;
+    margin: 0px;
+    padding-top: 25px;
+    display: inline-block;
+    text-align: center;
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 7px;
+    font-weight: 100;
+}
+
+header h3{
+    background-color: var(--tertiary); width: 500px; height: 50px;
+    margin-top: 235px;
+    margin-left: 1020px;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 30px;
+    color: var(--secondary);
+}
+
+header nav{
+    float: right;
+}
+
+header nav ul li{
+    display: inline;
+}
+
+header nav ul li a{
+    margin: 0;
+    font-weight: lighter;
+    font-size: 25px;
+    flex: auto; word-wrap: normal;
+    margin: 0 15px;  
+}
+
+nav a:hover {
+    color: var(--tertiary);
+}
+
+.left{
+    text-align: left;
+    font-size: 30px;
+    border-right: thick solid var(--primary); display: inline-block; padding-right: 10px;
+}
+
+
+
+
