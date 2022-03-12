@@ -53,7 +53,7 @@ header h3{
     color: var(--secondary);
 }
 
-/* CSS for the navigation  */
+/* CSS for the navigation in the header  */
 header nav ul{
  display: flex;
  flex-wrap: wrap; 
@@ -69,7 +69,7 @@ header nav ul li a{
     font-size: 1.55vw;
     color: var(--primary);  
 }
-
+ /* pseudo class that will change the color of the link when mouse hovers */
 nav a:hover {
     color: var(--tertiary);
 }
@@ -158,6 +158,21 @@ a:hover {
 
 
 @media screen and (max-width: 575px){
+    header h1{ 
+        flex: 1;
+        font-size: 50px;
+    }
+
+    header h3{
+        flex 1;
+        font-size:25px;
+    }
+
+    header nav {
+        flex: 1;
+        flex-direction: row;
+    }
+
 
 }    
 
