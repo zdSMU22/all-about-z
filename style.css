@@ -63,11 +63,11 @@ header nav ul{
 }
 
 header nav ul li a{
-    margin: 0 40px;
-    padding-left: 30px;
+    margin: 0 50px;
+    display:flex;
     font-weight: lighter;
     font-size: 1.55vw;
-    color: var(--primary);
+    color: var(--primary);  
 }
 
 nav a:hover {
@@ -83,26 +83,31 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    border-right: thick solid var(--primary); display: inline-block; padding-right: 10px;
+    border-right: thick solid var(--primary); display: flex; padding-right: 10px;
+}
+#about {
+    display: flex;
+    justify-content: space-between;
+}
 
+#about p {
+    margin-top: 75px;
 }
 
 #about img {
     width: 250px;
     height: 350px;
-    display: flex;
-    justify-content: right;
+    margin-top: 25px;
 }
 
 
 /* Work section with the hyperlinked grpahics */
 #work {
     margin: 50px auto;
-    /* padding-bottom: 50px; */
     display: flex;
     flex-wrap: wrap;
     align-items:flex-start;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #work img{
@@ -125,15 +130,37 @@ nav a:hover {
     padding: 5px 0;
 }
 
-.contact-info li {
+#contact{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     list-style: none ;
+}
+
+.contact-info{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 75px;
+    list-style: none;
+    text-decoration: underline; 
+    font-weight: bolder;
     
 }
 
-    
+a:link, a:visited {
+    color: var(--primary);
+} 
+
+a:hover {
+    color: var(--tertiary);
+}
+
+
+@media screen and (max-width: 575px){
+
+}    
+
 
 
 
