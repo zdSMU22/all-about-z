@@ -8,6 +8,7 @@
 
 *{
     margin: 0;
+    display: flexbox;
 }
 
 body{
@@ -16,7 +17,7 @@ body{
 }
 
 header{
-    background-image: url(./images/hero4.jpg);
+    background-image: url(./images/Hero.jpg);
     height: 400px;
     width: auto;
     background-size: cover;
@@ -31,6 +32,7 @@ header a{
 
 header h1{
     background-color: var(--tertiary); width: 600px; height: 100px;
+    color: var(--secondary);
     margin: 0px;
     padding-top: 25px;
     text-align: center;
@@ -71,6 +73,7 @@ nav a:hover {
     color: var(--tertiary);
 }
 
+
 /* Begining CSS for the body of page */
 .left{
     margin: 40px 15px;
@@ -81,21 +84,50 @@ nav a:hover {
 
 }
 
-.flex-row {
+#about img {
+    width: 200px;
+    height: 250px;
     display: flex;
+    justify-content: right;
 }
 
-.main {
-    height: 300px;
-    width: 805px;
+
+/* Work section with the hyperlinked grpahics */
+#work {
+    margin: 50px auto;
+    /* padding-bottom: 50px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    justify-content: space-between;
 }
 
-.support {
-    height: 200px;
+#work img{
     width: 400px;
+    height: 300px;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   justify-content:space-around;
+   flex-shrink: 1;
 }
 
 
+.main img {
+    width: 800px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+}
+
+.contact li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
 @media screen {max-width: 768px}
 flex-direction: column;
 }
