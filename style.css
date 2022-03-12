@@ -1,21 +1,22 @@
+/* Color variables set-up  */
 :root{
     --primary: rgb(180, 94, 60); 
     --secondary: rgb(255, 255, 255);
     --tertiary: rgb(167, 128, 96);
-    
-
 }
 
+/* Global statement, all margins are set to 0 */
 *{
     margin: 0;
-    display: flexbox;
 }
 
+/* Selection of font family and color for the body of page */
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--primary);
 }
 
+/* Header starts here, includes the image, navigation links and two banners with name and subtitle */
 header{
     background-image: url(./images/Hero.jpg);
     height: 400px;
@@ -52,6 +53,7 @@ header h3{
     color: var(--secondary);
 }
 
+/* CSS for the navigation  */
 header nav ul{
  display: flex;
  flex-wrap: wrap; 
@@ -59,7 +61,6 @@ header nav ul{
  align-items: center;
  list-style: none; 
 }
-
 
 header nav ul li a{
     margin: 0 40px;
@@ -79,14 +80,16 @@ nav a:hover {
     margin: 40px 15px;
     text-align: left;
     font-size: 30px;
-    display: flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
     border-right: thick solid var(--primary); display: inline-block; padding-right: 10px;
 
 }
 
 #about img {
-    width: 200px;
-    height: 250px;
+    width: 250px;
+    height: 350px;
     display: flex;
     justify-content: right;
 }
@@ -112,25 +115,24 @@ nav a:hover {
    flex-shrink: 1;
 }
 
-
-.main img {
+#main-photo img {
     width: 800px;
     height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 1;
 }
 
-.contact li {
+#work h3, h4 {
+    justify-items: center;
+    padding: 5px 0;
+}
+
+.contact-info li {
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
     justify-content: space-between;
+    list-style: none ;
+    
 }
-@media screen {max-width: 768px}
-flex-direction: column;
-}
+
     
 
 
