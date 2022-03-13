@@ -41,12 +41,12 @@ header h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     letter-spacing: 7px;
     font-weight: 100;
-    
+
 }
 
 header h3{
     background-color: var(--tertiary); width: 500px; height: 50px;
-    position: absolute; top: 300px; right: 0px;
+    position: relative; top: 300px; right: 0px;
     padding: 15px 0;
     text-align: center;
     font-size: 30px;
@@ -58,13 +58,15 @@ header nav ul{
  display: flex;
  flex-wrap: wrap; 
  justify-content: space-between;
- align-items: center;
+ align-items: right;
  list-style: none; 
 }
 
 header nav ul li a{
-    margin: 0 50px;
+    margin: 0 30px;
     display:flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-weight: lighter;
     font-size: 1.55vw;
     color: var(--primary);  
@@ -76,6 +78,8 @@ nav a:hover {
 
 
 /* Begining CSS for the body of page */
+
+/* This define the test about me, work, and contact me */
 .left{
     margin: 40px 15px;
     text-align: left;
@@ -85,6 +89,8 @@ nav a:hover {
     justify-content: left;
     border-right: thick solid var(--primary); display: flex; padding-right: 10px;
 }
+
+/* This is the about me paragraph and picture */
 #about {
     display: flex;
     justify-content: space-between;
@@ -99,7 +105,6 @@ nav a:hover {
     height: 350px;
     margin-top: 25px;
 }
-
 
 /* Work section with the hyperlinked grpahics */
 #work {
@@ -120,16 +125,19 @@ nav a:hover {
    flex-shrink: 1;
 }
 
+/* Using this to override the previous picture width and height for first tiled image */
 #main-photo img {
-    width: 800px;
+    width: 900px;
     height: 300px;
 }
 
+/* This defines the text under each picture */
 #work h3, h4 {
     justify-items: center;
     padding: 5px 0;
 }
 
+/* Contact information */
 #contact{
     display: flex;
     flex-wrap: wrap;
@@ -147,7 +155,7 @@ nav a:hover {
     font-weight: bolder;
     
 }
-
+ /* psuedo classes to keep the visted links the same color as the one that has not been visited and to change the color on hover */
 a:link, a:visited {
     color: var(--primary);
 } 
@@ -156,25 +164,20 @@ a:hover {
     color: var(--tertiary);
 }
 
-
-@media screen and (max-width: 575px){
-    header h1{ 
-        flex: 1;
-        font-size: 50px;
-    }
-
-    header h3{
-        flex 1;
-        font-size:25px;
-    }
-
-    header nav {
-        flex: 1;
-        flex-direction: row;
-    }
-
-
+/* beginning of the media query to make the layout fit to different screen sizes */
+@media screen and (max-width: 980px){
+   
 }    
+@media screen and (max-width: 786px) {
+    
+}
+
+@media screen and (max-width: 575px) {
+    .contact-info {
+       display: flex;
+       flex-direction: column;
+   }
+}
 
 
 
