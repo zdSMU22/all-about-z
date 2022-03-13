@@ -19,4 +19,4 @@ Screenshot of the tablet layout
 ![Screenshot 2022-03-13 180805](https://user-images.githubusercontent.com/94766160/158083237-96f6b3a8-f643-4b9a-82bb-2d29cdcc898b.png)
 
 
-    Link to the depolyed page:
+    Link to the depolyed page: https://zdsmu22.github.io/all-about-z/
