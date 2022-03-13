@@ -20,9 +20,10 @@ body{
 header{
     background-image: url(./images/Hero.jpg);
     height: 400px;
-    width: auto;
+    width: 100%;
     background-size: cover;
     display: flex;
+    flex: 1;
     margin: 0;
 }
 
@@ -55,22 +56,27 @@ header h3{
 
 /* CSS for the navigation in the header  */
 header nav ul{
- display: flex;
- flex-wrap: wrap; 
- justify-content: space-between;
- align-items: right;
+ display: flex; 
+ flex-direction: row;
+ justify-content: space-evenly;
  list-style: none; 
+ text-align: right;
+
+}
+
+header nav ul li {
+    display: inline-block;
 }
 
 header nav ul li a{
-    margin: 0 30px;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
+    width: 100%;
+    display: block;
+    padding: 10px 50px 10px 50px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 25px;
     color: var(--primary);  
 }
+
  /* pseudo class that will change the color of the link when mouse hovers */
 nav a:hover {
     color: var(--tertiary);
@@ -87,7 +93,7 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    border-right: thick solid var(--primary); display: flex; padding-right: 10px;
+    border-right: thick solid var(--primary); padding-right: 20px;
 }
 
 /* This is the about me paragraph and picture */
@@ -104,6 +110,8 @@ nav a:hover {
     width: 250px;
     height: 350px;
     margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Work section with the hyperlinked grpahics */
@@ -135,6 +143,7 @@ nav a:hover {
 #work h3, h4 {
     justify-items: center;
     padding: 5px 0;
+    display: flex;
 }
 
 /* Contact information */
@@ -147,6 +156,7 @@ nav a:hover {
 
 .contact-info{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 75%;
     margin: 75px;
@@ -165,19 +175,47 @@ a:hover {
 }
 
 /* beginning of the media query to make the layout fit to different screen sizes */
+
+/* This is a media query to fit smaller browser screens */
 @media screen and (max-width: 980px){
-   
-}    
+    header h1{
+        font-size: 35px;
+    }
+    header nav ul li a{
+        flex-direction: column;
+        font-size: 20px;
+        justify-items: right
+    }
+
+    .left{
+        border-right: none;   
+    }
+
+    #contact{ 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    .contact-info{
+       flex-direction: column;
+      justify-content: center; 
+      line-height: 2.8;
+       }
+}  
+
+/* This is a media query to fit tablets */
 @media screen and (max-width: 786px) {
-    
+    header h3{
+        font-size: 25px;
+    }
+    #main-photo img{
+        width: 750px
+    }  
 }
 
-@media screen and (max-width: 575px) {
-    .contact-info {
-       display: flex;
-       flex-direction: column;
-   }
-}
+
+
+   
 
 
 
