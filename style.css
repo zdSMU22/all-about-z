@@ -18,7 +18,7 @@ body{
 
 /* Header starts here, includes the image, navigation links and two banners with name and subtitle */
 header{
-    background-image: url(./images/Hero.jpg);
+    background-image: url(https://images.unsplash.com/photo-1620056897337-0f940bf24eaf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGJlaWdlfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
     height: 400px;
     width: 100%;
     background-size: cover;
@@ -210,6 +210,19 @@ a:hover {
     #main-photo img{
         width: 750px
     }  
+}
+
+
+@media  and (max-width: 575px) {
+   
+    #main-photo img{
+        width: 500px
+    }  
+
+    #work img{
+        width: 200px;
+        height: 150px;
+    
 }
 
 
