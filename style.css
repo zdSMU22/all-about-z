@@ -213,18 +213,6 @@ a:hover {
 }
 
 
-@media  and (max-width: 575px) {
-   
-    #main-photo img{
-        width: 500px
-    }  
-
-    #work img{
-        width: 200px;
-        height: 150px;
-    
-}
-
 
 
    
